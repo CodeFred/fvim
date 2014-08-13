@@ -1,0 +1,3 @@
+# do not commit undo files
+.undo/*
+!.undo/README
