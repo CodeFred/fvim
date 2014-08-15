@@ -12,3 +12,7 @@ I recently did a major long overdue upgrade, based on [this collection](https://
 # fvim is installed 
 source <FVIM_DIR>/vimrc/vimrc.vim
 ```
+
+# Screenshot
+
+![](assets/screenshot1.png)
