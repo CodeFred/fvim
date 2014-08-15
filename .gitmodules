@@ -1,3 +1,36 @@
 [submodule "tools/powerline-fonts"]
 	path = tools/powerline-fonts
-	url = https://github.com/Lokaltog/powerline-fonts
+	url = git://github.com/Lokaltog/powerline-fonts
+[submodule "sources/vim-airline"]
+	path = sources/vim-airline
+	url = git://github.com/bling/vim-airline
+[submodule "sources/ack.vim"]
+	path = sources/ack.vim
+	url = git://github.com/mileszs/ack.vim
+[submodule "sources/bufexplorer"]
+	path = sources/bufexplorer
+	url = git://github.com/corntrace/bufexplorer
+[submodule "sources/ctrlp.vim"]
+	path = sources/ctrlp.vim
+	url = git://github.com/kien/ctrlp.vim
+[submodule "sources/goyo.vim"]
+	path = sources/goyo.vim
+	url = git://github.com/junegunn/goyo.vim
+[submodule "sources/mayansmoke"]
+	path = sources/mayansmoke
+	url = git://github.com/vim-scripts/mayansmoke
+[submodule "sources/mru"]
+	path = sources/mru
+	url = git://github.com/yegappan/mru
+[submodule "sources/nerdtree"]
+	path = sources/nerdtree
+	url = git://github.com/scrooloose/nerdtree
+[submodule "sources/nginx.vim"]
+	path = sources/nginx.vim
+	url = git://github.com/vim-scripts/nginx.vim
+[submodule "sources/open_file_under_cursor.vim"]
+	path = sources/open_file_under_cursor.vim
+	url = git://github.com/amix/open_file_under_cursor.vim
+[submodule "sources/peaksea"]
+	path = sources/peaksea
+	url = git://github.com/vim-scripts/peaksea
