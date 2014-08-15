@@ -108,10 +108,6 @@ set magic
 " Don't redraw while executing macros (performance)
 set lazyredraw
 
-" Color schemes
-colorscheme desert
-set background=dark
-
 " Fonts
 set antialias
 set gfn=Meslo\ LG\ S\ for\ Powerline:h12,Menlo\ Regular:h12,Bitstream\ Vera\ Sans\ Mono:h11,Monospace\ 11
@@ -305,6 +301,19 @@ inoremap $t <><esc>i
 
 " Omni complete functions
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
+" Bootup Pathogen
+" We want to do it before we set the color scheme (so we can find it)
+call pathogen#infect(g:fvim_path.'sources/{}')
+call pathogen#helptags()
+
+" Color schemes
+colorscheme lucius
+set background=light
+
+" Since at this point we should have vim-airline running, we don't
+" need the default mode indicator
+set noshowmode
 
 " Try to source the additional config files
 exec 'source '.s:this_path.'/filetypes.vim'
