@@ -55,3 +55,60 @@
 [submodule "sources/vim-irblack-plus"]
 	path = sources/vim-irblack-plus
 	url = git://github.com/kml/vim-irblack-plus.git
+[submodule "sources/YankRing.vim"]
+	path = sources/YankRing.vim
+	url = git://github.com/vim-scripts/YankRing.vim
+[submodule "sources/Emmet.vim"]
+	path = sources/Emmet.vim
+	url = git://github.com/vim-scripts/Emmet.vim
+[submodule "sources/vim-addon-mw-utils"]
+	path = sources/vim-addon-mw-utils
+	url = git://github.com/MarcWeber/vim-addon-mw-utils
+[submodule "sources/vim-bundle-mako"]
+	path = sources/vim-bundle-mako
+	url = git://github.com/sophacles/vim-bundle-mako
+[submodule "sources/vim-coffee-script"]
+	path = sources/vim-coffee-script
+	url = git://github.com/kchmck/vim-coffee-script
+[submodule "sources/vim-colors-solarized"]
+	path = sources/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized
+[submodule "sources/vim-commentary"]
+	path = sources/vim-commentary
+	url = git://github.com/tpope/vim-commentary
+[submodule "sources/vim-expand-region"]
+	path = sources/vim-expand-region
+	url = git://github.com/terryma/vim-expand-region
+[submodule "sources/vim-fugitive"]
+	path = sources/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive
+[submodule "sources/vim-go"]
+	path = sources/vim-go
+	url = git://github.com/fatih/vim-go
+[submodule "sources/vim-indent-object"]
+	path = sources/vim-indent-object
+	url = git://github.com/michaeljsmith/vim-indent-object
+[submodule "sources/vim-less"]
+	path = sources/vim-less
+	url = git://github.com/groenewege/vim-less
+[submodule "sources/vim-markdown"]
+	path = sources/vim-markdown
+	url = git://github.com/tpope/vim-markdown
+[submodule "sources/vim-multiple-cursors"]
+	path = sources/vim-multiple-cursors
+	url = git://github.com/terryma/vim-multiple-cursors
+[submodule "sources/vim-pyte"]
+	path = sources/vim-pyte
+	url = git://github.com/therubymug/vim-pyte
+[submodule "sources/vim-repeat"]
+	path = sources/vim-repeat
+	url = git://github.com/tpope/vim-repeat
+[submodule "sources/vim-snippets"]
+	path = sources/vim-snippets
+	url = git://github.com/honza/vim-snippets
+[submodule "sources/vim-surround"]
+	path = sources/vim-surround
+	url = git://github.com/tpope/vim-surround
+[submodule "sources/vim-zenroom2"]
+	path = sources/vim-zenroom2
+	url = git://github.com/amix/vim-zenroom2
