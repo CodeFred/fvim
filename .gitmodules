@@ -34,3 +34,24 @@
 [submodule "sources/peaksea"]
 	path = sources/peaksea
 	url = git://github.com/vim-scripts/peaksea
+[submodule "sources/snipmate-snippets"]
+	path = sources/snipmate-snippets
+	url = git://github.com/scrooloose/snipmate-snippets
+[submodule "sources/vim-snipmate"]
+	path = sources/vim-snipmate
+	url = git://github.com/garbas/vim-snipmate
+[submodule "sources/syntastic"]
+	path = sources/syntastic
+	url = git://github.com/scrooloose/syntastic
+[submodule "sources/taglist.vim"]
+	path = sources/taglist.vim
+	url = git://github.com/vim-scripts/taglist.vim
+[submodule "sources/tlib"]
+	path = sources/tlib
+	url = git://github.com/vim-scripts/tlib
+[submodule "sources/vim-irblack"]
+	path = sources/vim-irblack
+	url = git://github.com/wesgibbs/vim-irblack
+[submodule "sources/vim-irblack-plus"]
+	path = sources/vim-irblack-plus
+	url = git://github.com/kml/vim-irblack-plus.git
