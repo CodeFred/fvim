@@ -112,3 +112,6 @@
 [submodule "sources/vim-zenroom2"]
 	path = sources/vim-zenroom2
 	url = git://github.com/amix/vim-zenroom2
+[submodule "sources/vim-lucius"]
+	path = sources/vim-lucius
+	url = git://github.com/jonathanfilip/vim-lucius
