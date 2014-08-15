@@ -7,9 +7,11 @@
 [submodule "sources/ack.vim"]
 	path = sources/ack.vim
 	url = git://github.com/mileszs/ack.vim
+	ignore = untracked
 [submodule "sources/bufexplorer"]
 	path = sources/bufexplorer
 	url = git://github.com/corntrace/bufexplorer
+	ignore = untracked
 [submodule "sources/ctrlp.vim"]
 	path = sources/ctrlp.vim
 	url = git://github.com/kien/ctrlp.vim
@@ -46,9 +48,11 @@
 [submodule "sources/taglist.vim"]
 	path = sources/taglist.vim
 	url = git://github.com/vim-scripts/taglist.vim
+	ignore = untracked
 [submodule "sources/tlib"]
 	path = sources/tlib
 	url = git://github.com/vim-scripts/tlib
+	ignore = untracked
 [submodule "sources/vim-irblack"]
 	path = sources/vim-irblack
 	url = git://github.com/wesgibbs/vim-irblack
@@ -58,9 +62,11 @@
 [submodule "sources/YankRing.vim"]
 	path = sources/YankRing.vim
 	url = git://github.com/vim-scripts/YankRing.vim
+	ignore = untracked
 [submodule "sources/Emmet.vim"]
 	path = sources/Emmet.vim
 	url = git://github.com/vim-scripts/Emmet.vim
+	ignore = untracked
 [submodule "sources/vim-addon-mw-utils"]
 	path = sources/vim-addon-mw-utils
 	url = git://github.com/MarcWeber/vim-addon-mw-utils
@@ -79,6 +85,7 @@
 [submodule "sources/vim-expand-region"]
 	path = sources/vim-expand-region
 	url = git://github.com/terryma/vim-expand-region
+	ignore = untracked
 [submodule "sources/vim-fugitive"]
 	path = sources/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive
@@ -97,6 +104,7 @@
 [submodule "sources/vim-multiple-cursors"]
 	path = sources/vim-multiple-cursors
 	url = git://github.com/terryma/vim-multiple-cursors
+	ignore = untracked
 [submodule "sources/vim-pyte"]
 	path = sources/vim-pyte
 	url = git://github.com/therubymug/vim-pyte
