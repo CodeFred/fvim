@@ -1,3 +1,8 @@
-# do not commit undo files
+# do not commit undo or temp files
 .undo/*
+.temp/*
 !.undo/README
+!.temp/README
+
+# Do not check in tags
+sources/**/tags

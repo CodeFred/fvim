@@ -1,0 +1,3 @@
+[submodule "tools/powerline-fonts"]
+	path = tools/powerline-fonts
+	url = https://github.com/Lokaltog/powerline-fonts

@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
-call pathogen#infect('~/.vim_runtime/sources/{}')
+call pathogen#infect(g:fvim_path.'sources/{}')
 call pathogen#helptags()
 
 
@@ -28,7 +28,7 @@ map <leader>f :MRU<CR>
 if has("win16") || has("win32")
     " Don't do anything
 else
-    let g:yankring_history_dir = '~/.vim_runtime/temp_dirs/'
+    let g:yankring_history_dir = g:fvim_temp.'/'
 endif
 
 
@@ -92,6 +92,12 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 " => vim-airline config (force color)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline_theme="luna"
+" If we wanted to use Powerline fonts, here's how to enable that
+let g:airline_powerline_fonts=1
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

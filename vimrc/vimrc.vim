@@ -3,8 +3,14 @@
 
 
 " A little housekeeping...
-:let g:this_file = expand('<sfile>')
-:let g:this_path = expand('<sfile>:p:h')
+:let s:this_file = expand('<sfile>')
+:let s:this_path = expand('<sfile>:p:h')
+:let g:fvim_path = simplify(s:this_path.'/../')
+:let g:fvim_undo = g:fvim_path.'.undo'
+:let g:fvim_temp = g:fvim_path.'.temp'
+
+" Add fvim to the runtimepath, so things in it can be picked up
+exec 'set runtimepath+='.g:fvim_path
 
 " Allows vim to manage buffers effectively by paging them to disk
 set hidden
@@ -42,7 +48,7 @@ set wildignore=.git/*,.hg/*,.svc/*,.DS_Store
 " /-searches will be case sensitive only if there are capital
 " letters in the search expression
 " *-searches are still case sensitive
-set ignorecase 
+set ignorecase
 set smartcase
 
 " Set the terminal title (if running from the console)
@@ -50,6 +56,11 @@ set title
 
 " Tell me where I am, please
 set ruler
+
+" Enable line numbers on the left side
+set number
+nmap <C-N><C-N> :set invnumber<CR>
+nmap <C-N><C-R> :set invrelativenumber<CR>
 
 " Intuitive backspacing
 set backspace=indent,eol,start
@@ -61,7 +72,7 @@ syntax on
 filetype on
 filetype plugin on
 filetype indent on
- 
+
 " Highlight search terms, dynamically as they are typed
 " If it gets annoying, disable it temporarily
 set hlsearch
@@ -102,7 +113,8 @@ colorscheme desert
 set background=dark
 
 " Fonts
-set gfn=Menlo\ Regular:h12,Bitstream\ Vera\ Sans\ Mono:h11,Monospace\ 11
+set antialias
+set gfn=Meslo\ LG\ S\ for\ Powerline:h12,Menlo\ Regular:h12,Bitstream\ Vera\ Sans\ Mono:h11,Monospace\ 11
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -123,9 +135,10 @@ set laststatus=2
 
 " Show the file encoding and the BOM in the status line
 " (plus everything else that is displayed usually)
-if has("statusline")
- set statusline=%<%f\ %h%m%r%=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
-endif
+" (useful if vim-airline is disabled)
+" if has("statusline")
+" set statusline=%<%f\ %h%m%r%=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
+" endif
 
 " Use UNIX as the standard file type
 set ffs=unix,dos,mac
@@ -254,13 +267,13 @@ map <leader>x :e ~/buffer.md<CR>
 map <leader>pp :setlocal paste!<CR>
 
 " Fast editing and reloading of vimrc configs
-exec 'map <leader>e :e! '.g:this_file.'<CR>'
+exec 'map <leader>e :e! '.s:this_file.'<CR>'
 autocmd! BufWritePost *.vim source %
 
-" Turn persistent undo on 
+" Turn persistent undo on
 " Can undo even when you close a buffer/VIM
 try
-    exec 'set undodir='.g:this_path.'/../.undo'
+    exec 'set undodir='.g:fvim_undo
     set undofile
 catch
 endtry
@@ -292,3 +305,7 @@ inoremap $t <><esc>i
 
 " Omni complete functions
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
+" Try to source the additional config files
+exec 'source '.s:this_path.'/filetypes.vim'
+exec 'source '.s:this_path.'/plugins_config.vim'
