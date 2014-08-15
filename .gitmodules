@@ -123,3 +123,41 @@
 [submodule "sources/vim-lucius"]
 	path = sources/vim-lucius
 	url = git://github.com/jonathanfilip/vim-lucius
+[submodule "sources/vim-node"]
+	path = sources/vim-node
+	url = git://github.com/moll/vim-node
+[submodule "sources/jshint.vim"]
+	path = sources/jshint.vim
+	url = git://github.com/walm/jshint.vim
+	ignore = untracked
+[submodule "sources/vim-javascript-syntax"]
+	path = sources/vim-javascript-syntax
+	url = git://github.com/jelera/vim-javascript-syntax
+[submodule "sources/vim-node-dict"]
+	path = sources/vim-node-dict
+	url = git://github.com/guileen/vim-node-dict
+[submodule "sources/node-vim-debugger"]
+	path = sources/node-vim-debugger
+	url = git://github.com/sidorares/node-vim-debugger
+[submodule "sources/vim-nodejs-complete"]
+	path = sources/vim-nodejs-complete
+	url = git://github.com/ahayman/vim-nodejs-complete
+[submodule "sources/mango.vim"]
+	path = sources/mango.vim
+	url = git://github.com/goatslacker/mango.vim
+[submodule "sources/nerdcommenter"]
+	path = sources/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter
+[submodule "sources/snipmate-nodejs"]
+	path = sources/snipmate-nodejs
+	url = git://github.com/jamescarr/snipmate-nodejs
+[submodule "sources/vim-easymotion"]
+	path = sources/vim-easymotion
+	url = git://github.com/Lokaltog/vim-easymotion
+[submodule "sources/tabular"]
+	path = sources/tabular
+	url = git://github.com/godlygeek/tabular
+[submodule "sources/tern_for_vim"]
+	path = sources/tern_for_vim
+	url = git://github.com/marijnh/tern_for_vim
+	ignore = untracked

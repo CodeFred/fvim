@@ -23,7 +23,13 @@ I recently did a major long overdue upgrade, based on [this collection](https://
 		brew install ctags
 		echo 'export PATH=/usr/local/bin:$PATH' >> ~/.profile
 
-6. You might want to support `vim-go`, you need to install `go`, `hg`, and set `$GOPATH`, and other annoyances. (Honestly, I'm thinking of removing it from the list of plugins because it's so whiny and needy.)
+6. If you need JavaScript autocomplete, be sure you have `npm` installed, and initialize `tern_for_vim`:
+
+		brew install npm
+		cd <FVIM_DIR>/sources/tern_for_vim
+		npm install
+
+7. You might want to support `vim-go`, you need to install `go`, `hg`, and set `$GOPATH`, and other annoyances. (Honestly, I'm thinking of removing it from the list of plugins because it's so whiny and needy.)
 
 		brew install go
 		brew install hg
