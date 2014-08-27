@@ -140,8 +140,8 @@
 	path = sources/node-vim-debugger
 	url = git://github.com/sidorares/node-vim-debugger
 [submodule "sources/vim-nodejs-complete"]
-	path = sources/vim-nodejs-complete
-	url = https://github.com/CodeFred/vim-nodejs-complete
+    path = sources/vim-nodejs-complete
+	url = git://github.com/ahayman/vim-nodejs-complete
 [submodule "sources/mango.vim"]
 	path = sources/mango.vim
 	url = git://github.com/goatslacker/mango.vim
